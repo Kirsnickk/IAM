@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: asset_management_db
+    environment:
+      POSTGRES_USER: asset_user
+      POSTGRES_PASSWORD: asset_password_123
+      POSTGRES_DB: asset_management
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U asset_user -d asset_management"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: asset_management_redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:

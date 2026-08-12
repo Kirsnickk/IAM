@@ -1,0 +1,32 @@
+services:
+  # Web Service — Backend API (Express.js)
+  - type: web
+    name: asset-management-api
+    env: node
+    region: singapore
+    plan: starter
+    buildCommand: npm install && npm run build --workspace=packages/shared && npm run build --workspace=apps/api
+    startCommand: cd apps/api && npx prisma db push && npm run db:seed && node dist/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: CORS_ORIGIN
+        value: https://asset-management-web.vercel.app
+      - key: DATABASE_URL
+        fromDatabase:
+          name: asset-management-db
+          property: connectionString
+
+databases:
+  # PostgreSQL Database Managed
+  - name: asset-management-db
+    databaseName: asset_management
+    user: asset_user
+    plan: starter
+    region: singapore
