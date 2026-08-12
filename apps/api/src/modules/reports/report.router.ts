@@ -18,24 +18,24 @@ router.get('/dashboard', async (_req: AuthRequest, res: Response) => {
     ]);
 
     // Enrich category and location names
-    const categoryIds = byCategory.map(c => c.categoryId);
-    const locationIds = byLocation.map(l => l.locationId);
+    const categoryIds = byCategory.map((c: any) => c.categoryId);
+    const locationIds = byLocation.map((l: any) => l.locationId);
 
     const [categories, locations] = await Promise.all([
       prisma.assetCategory.findMany({ where: { id: { in: categoryIds } }, select: { id: true, name: true } }),
       prisma.location.findMany({ where: { id: { in: locationIds } }, select: { id: true, name: true } }),
     ]);
 
-    const categoryMap = Object.fromEntries(categories.map(c => [c.id, c.name]));
-    const locationMap = Object.fromEntries(locations.map(l => [l.id, l.name]));
+    const categoryMap = Object.fromEntries(categories.map((c: any) => [c.id, c.name]));
+    const locationMap = Object.fromEntries(locations.map((l: any) => [l.id, l.name]));
 
     res.json({
       success: true,
       dashboard: {
         totalAssets,
-        byStatus: byStatus.map(s => ({ status: s.status, count: s._count })),
-        byCategory: byCategory.map(c => ({ category: categoryMap[c.categoryId] || c.categoryId, count: c._count })),
-        byLocation: byLocation.map(l => ({ location: locationMap[l.locationId] || l.locationId, count: l._count })),
+        byStatus: byStatus.map((s: any) => ({ status: s.status, count: s._count })),
+        byCategory: byCategory.map((c: any) => ({ category: categoryMap[c.categoryId] || c.categoryId, count: c._count })),
+        byLocation: byLocation.map((l: any) => ({ location: locationMap[l.locationId] || l.locationId, count: l._count })),
         pendingTransfers: recentTransfers,
         openMaintenanceTickets: openTickets,
       },
@@ -53,13 +53,13 @@ router.get('/by-department', async (_req: AuthRequest, res: Response) => {
       where: { isDeleted: false, departmentId: { not: null } },
     });
 
-    const deptIds = data.map(d => d.departmentId!).filter(Boolean);
+    const deptIds = data.map((d: any) => d.departmentId!).filter(Boolean);
     const departments = await prisma.department.findMany({ where: { id: { in: deptIds } }, select: { id: true, name: true, code: true } });
-    const deptMap = Object.fromEntries(departments.map(d => [d.id, d]));
+    const deptMap = Object.fromEntries(departments.map((d: any) => [d.id, d]));
 
     res.json({
       success: true,
-      report: data.map(d => ({
+      report: data.map((d: any) => ({
         department: deptMap[d.departmentId!] || { name: 'N/A' },
         assetCount: d._count,
         totalPurchasePrice: d._sum.purchasePrice,
