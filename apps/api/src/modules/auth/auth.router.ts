@@ -1,17 +1,26 @@
 import { Router, Request, Response } from 'express';
-import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
+import * as bcryptModule from 'bcryptjs';
+import * as jwtModule from 'jsonwebtoken';
 import { prisma } from '../../app.js';
 import { authMiddleware, AuthRequest } from '../../middleware/auth.js';
 
 const router = Router();
-const JWT_SECRET = process.env.JWT_SECRET || 'fallback-secret';
+const bcrypt = (bcryptModule as any).default || bcryptModule;
+const jwt = (jwtModule as any).default || jwtModule;
+const JWT_SECRET = process.env.JWT_SECRET;
 const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN || '7d';
+
+if (!JWT_SECRET && process.env.NODE_ENV === 'production') {
+  throw new Error('JWT_SECRET must be configured in production');
+}
+
+const signingSecret = JWT_SECRET || 'development-only-secret';
 
 // POST /api/v1/auth/login
 router.post('/login', async (req: Request, res: Response) => {
   try {
-    const { email, password } = req.body;
+    const email = typeof req.body.email === 'string' ? req.body.email.trim().toLowerCase() : '';
+    const password = typeof req.body.password === 'string' ? req.body.password : '';
     if (!email || !password) {
       res.status(400).json({ success: false, message: 'Email và mật khẩu là bắt buộc' });
       return;
@@ -29,7 +38,7 @@ router.post('/login', async (req: Request, res: Response) => {
       return;
     }
 
-    const token = jwt.sign({ userId: user.id, role: user.role }, JWT_SECRET, { expiresIn: JWT_EXPIRES_IN } as any);
+    const token = jwt.sign({ userId: user.id, role: user.role }, signingSecret, { expiresIn: JWT_EXPIRES_IN } as any);
 
     res.json({
       success: true,

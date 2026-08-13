@@ -9,16 +9,21 @@ const COLORS = ['#0284c7', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];
 export default function DashboardPage() {
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
 
   useEffect(() => {
     api.get('/reports/dashboard')
       .then((res) => setData(res.data.dashboard))
-      .catch((err) => console.error(err))
+      .catch(() => setError('Không thể tải dữ liệu dashboard. Vui lòng thử lại.'))
       .finally(() => setLoading(false));
   }, []);
 
   if (loading) {
     return <div className="p-8 text-center text-slate-500 font-medium">Đang tải dữ liệu dashboard...</div>;
+  }
+
+  if (error) {
+    return <div className="rounded-xl border border-rose-200 bg-rose-50 p-6 text-center text-rose-700">{error}</div>;
   }
 
   return (

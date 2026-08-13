@@ -1,8 +1,9 @@
 import { Request, Response, NextFunction } from 'express';
-import jwt from 'jsonwebtoken';
+import * as jwtModule from 'jsonwebtoken';
 import { prisma } from '../app.js';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'fallback-secret';
+const jwt = (jwtModule as any).default || jwtModule;
+const JWT_SECRET = process.env.JWT_SECRET || 'development-only-secret';
 
 export interface AuthPayload {
   userId: string;

@@ -1,6 +1,8 @@
 import { Router, Request, Response } from 'express';
-import QRCode from 'qrcode';
+import * as QRCodeModule from 'qrcode';
 import { prisma } from '../../app.js';
+
+const QRCode = (QRCodeModule as any).default || QRCodeModule;
 import { authMiddleware, AuthRequest, requireRoles, auditLog } from '../../middleware/auth.js';
 
 const router = Router();

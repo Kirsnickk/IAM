@@ -1,6 +1,6 @@
 import 'dotenv/config';
-import express from 'express';
-import cors from 'cors';
+import * as expressModule from 'express';
+import * as corsModule from 'cors';
 import { PrismaClient } from '@prisma/client';
 import authRouter from './modules/auth/auth.router.js';
 import assetRouter from './modules/assets/asset.router.js';
@@ -12,11 +12,28 @@ import reportRouter from './modules/reports/report.router.js';
 import auditRouter from './modules/audit/audit.router.js';
 import { errorHandler } from './middleware/error.js';
 
+const express = (expressModule as any).default || expressModule;
+const cors = (corsModule as any).default || corsModule;
+
 export const prisma = new PrismaClient();
 
 const app = express();
 
-app.use(cors({ origin: process.env.CORS_ORIGIN || '*', credentials: true }));
+const configuredOrigins = (process.env.CORS_ORIGIN || '*')
+  .split(',')
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || configuredOrigins.includes('*') || configuredOrigins.includes(origin)) {
+      callback(null, true);
+      return;
+    }
+    callback(new Error('CORS origin is not allowed'));
+  },
+  credentials: true,
+}));
 app.use(express.json({ limit: '10mb' }));
 
 // Health check

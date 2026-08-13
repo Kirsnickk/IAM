@@ -6,8 +6,8 @@ import { Building2, Lock, Mail, AlertCircle } from 'lucide-react';
 
 export default function LoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState('admin@asset.vn');
-  const [password, setPassword] = useState('Admin@123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -87,11 +87,9 @@ export default function LoginPage() {
             {loading ? 'Đang xác thực...' : 'Đăng nhập vào Hệ thống'}
           </button>
 
-          <div className="bg-slate-50 border border-slate-200 p-4 rounded-lg text-xs space-y-1.5 text-slate-600">
-            <p className="font-semibold text-slate-800">Tài khoản trải nghiệm mẫu:</p>
-            <p>🔑 <span className="font-mono bg-slate-200 px-1.5 py-0.5 rounded">admin@asset.vn</span> / <span className="font-mono bg-slate-200 px-1.5 py-0.5 rounded">Admin@123</span> (Admin)</p>
-            <p>🔑 <span className="font-mono bg-slate-200 px-1.5 py-0.5 rounded">manager@asset.vn</span> / <span className="font-mono bg-slate-200 px-1.5 py-0.5 rounded">Manager@123</span> (Quản lý)</p>
-          </div>
+          <p className="text-center text-xs text-slate-500">
+            Liên hệ Quản trị hệ thống nếu bạn chưa được cấp tài khoản.
+          </p>
         </form>
       </div>
     </div>

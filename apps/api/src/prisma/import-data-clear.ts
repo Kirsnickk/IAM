@@ -280,15 +280,20 @@ async function main() {
 
     // Create Assignment if assigned to Employee
     if (staffCode && employeeMap[staffCode] && !isAvailable) {
-      await prisma.assetAssignment.create({
-        data: {
-          assetId: asset.id,
-          employeeId: employeeMap[staffCode],
-          assignedById: sysAdmin.id,
-          status: AssignmentStatus.ACTIVE,
-          notes: 'Initial data clear import assignment',
-        },
+      const existingAssignment = await prisma.assetAssignment.findFirst({
+        where: { assetId: asset.id, employeeId: employeeMap[staffCode], status: AssignmentStatus.ACTIVE },
       });
+      if (!existingAssignment) {
+        await prisma.assetAssignment.create({
+          data: {
+            assetId: asset.id,
+            employeeId: employeeMap[staffCode],
+            assignedById: sysAdmin.id,
+            status: AssignmentStatus.ACTIVE,
+            notes: 'Initial data clear import assignment',
+          },
+        });
+      }
     }
     officeAssetCount++;
   }
