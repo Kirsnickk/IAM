@@ -1,0 +1,70 @@
+﻿Status,Employee Id,Full Name,Gender,Date Of Birth,Date Of Joining,Official Email Id,Current Designation,Current Department,Job Level,Department Cost Center Id
+Active,23019368,Hassan Syed Umair,Male,1982-02-18,2023-03-20,syed.umairhassan@mapactive.vn,General Manager Merchandising,Merchandising,General Manager (F1),SCMDMMA0
+Active,23019369,Nguyen Ha Phuong Uyen,Female,1983-01-21,2019-06-05,uyen.nguyenhaphuong@mapactive.vn,Country Head,Finance Accounting,Associate Vice President (G1),SCACMMA0
+Active,23019370,Nguyen Thi Huynh Mai,Female,1983-05-18,2018-10-01,mai.nguyenthihuynh@mapactive.vn,Senior Finance & Accounting Manager,Finance Accounting,Senior Manager (D3),SCACMMA0
+Active,23019372,Mai Nguyen Diem Quynh,Female,1999-07-31,2021-11-29,quynh.mainguyendiem@mapactive.vn,Account Payable Supervisor,Finance Accounting,Executive (C1),SCACMMA0
+Active,23019374,Le Thi Anh Tuyet,Female,1985-10-13,2022-01-10,tuyet.lethianh@mapactive.vn,Tax & Accounting Manager,Finance Accounting,Manager (D2),SCACMMA0
+Active,23019376,Huynh My Danh,Female,1996-04-21,2019-03-20,danh.huynhmy@mapactive.vn,FP&A Supervisor,Finance Accounting,Senior Executive (C2),SCACMMA0
+Active,23019379,Ngo Anh Tuan,Male,1994-08-09,2018-10-01,tuan.ngoanh@mapactive.vn,Senior Wholesaler,Wholesales,Executive (C1),SCWSMMA0
+Active,23019380,Nguyen Nam Thang,Male,1993-01-30,2019-03-25,thang.nguyennam@mapactive.vn,Wholesale Supervisor,Wholesales,Executive (C1),SCWSMMA0
+Active,23019381,Duong Thi Bao Tram,Female,1998-09-18,2020-09-07,tram.duongthibao@mapactive.vn,Wholesale Senior Associate,Wholesales,Senior Associate (B3),SCWSMMA0
+Active,23019382,Luu Giang Cam Van,Female,1988-03-16,2020-03-04,van.luugiangcam@mapactive.vn,Senior HR & Procurement Manager,Human Capital,Senior Manager (D3),SCHRMMA0
+Active,23019383,Ngo Tieu Binh,Female,1994-05-21,2018-11-01,binh.ngotieu@mapactive.vn,Legal cum GA Supervisor,Legal,Senior Executive (C2),SCLEMMA0
+Active,23019384,Tran Thi Yen Nhi,Female,1996-08-25,2022-09-20,nhi.tranthiyen@mapactive.vn,Payroll & Em. Services Supervisor,Human Capital,Executive (C1),SCHRMMA0
+Active,23019385,Ksor Mah Hkoni,Female,1996-12-04,2022-10-03,ni.ksormahhko@mapactive.vn,Procurement Executive,Human Capital,Senior Associate (B3),SCHRMMA0
+Active,23019389,Luong Huu Quan,Male,1997-12-28,2023-03-27,quan.luonghuu@mapactive.vn,Associate IT Infrastructure & Operations Manager,Information Technology,Associate Manager (D1),SCITMMA0
+Active,23019391,Quan Thanh Them,Female,1982-03-26,2018-10-01,them.quanthanh@mapactive.vn,"Senior COE, Inventory Control & Internal Audit Manager","COE, Inventory Control & Internal Audit",Senior Manager (D3),SCCOMMA0
+Active,23019392,Nguyen Ngoc Xuan Duyen,Female,1994-11-26,2019-11-04,duyen.nguyenngocxuan@mapactive.vn,COE Supervisor,"COE, Inventory Control & Internal Audit",Executive (C1),SCCOMMA0
+Active,23019393,Nguyen Quyet Thang,Male,1983-04-27,2018-10-01,thang.nguyenquyet@mapactive.vn,Inventory Control Executive,"COE, Inventory Control & Internal Audit",Senior Associate (B3),SCCOMMA0
+Active,23019394,Tran Duy Dien,Male,1996-06-13,2023-06-01,dien.tranduy@mapactive.vn,Inventory Control Executive,"COE, Inventory Control & Internal Audit",Senior Associate (B3),SCCOMMA0
+Active,23019398,Huynh Tuan Nhan,Male,1981-07-06,2023-04-03,nhan.huynhtuan@mapactive.vn,SCM Senior Manager,Logistics,Senior Manager (D3),SCLOMMA0
+Active,23019399,Le Cam Linh,Female,1996-08-30,2020-03-09,linh.lecam@mapactive.vn,Shipping Associate Manager,Logistics,Associate Manager (D1),SCLOMMA0
+Active,23019401,Ngo Thi Bich Tram,Female,1996-04-10,2019-05-13,tram.ngothibich@mapactive.vn,Shipping Supervisor,Logistics,Executive (C1),SCLOMMA0
+Active,23019403,Dang Thanh Nam,Male,1984-02-29,2022-06-06,nam.dangthanh@mapactive.vn,Associate Warehouse and Distribution Manager,Logistics,Associate Manager (D1),SCLOMMA0
+Active,23019404,Nguyen Thi Thuy Mong,Female,1984-05-31,2023-04-10,mong.nguyenthithuy@mapactive.vn,Senior Marketing Manager,Marketing,Senior Manager (D3),SCMKMMA0
+Active,23019407,Nguyen Ngoc Lan Anh,Female,1991-06-12,2019-09-16,anh.nguyenngoclan@mapactive.vn,Graphic Designer,Marketing,Senior Executive (C2),SCMKMMA0
+Active,23019411,Nguyen Quoc Huy,Male,1997-07-27,2021-12-06,huy.nguyenquoc@mapactive.vn,VM Manager,Visual Merchandising,Manager (D2),SCVMMMA0
+Active,23019412,Nguyen Thanh Anh Thu,Female,1985-12-11,2023-06-06,thu.nguyenthanhanh@mapactive.vn,Senior VM Manager,Visual Merchandising,Senior Manager (D3),SCVMMMA0
+Active,23019413,Dao Thi Hong Le,Female,1988-08-01,2023-05-24,le.daothihong@mapactive.vn,Training Manager,Operations,Manager (D2),SCOPMMA0
+Active,23019414,Thoi Huu Nghia,Male,1993-10-09,2022-09-12,nghia.thoihuu@mapactive.vn,Division Manager,Project,Division Manager (E1),SCPJMMA0
+Active,23019415,Huynh Ngoc Son,Male,1995-01-24,2022-03-07,son.huynhngoc@mapactive.vn,Project Assistant Manager,Project,Associate Manager (D1),SCPJMMA0
+Active,23019420,Tiet Nha Phung,Female,1987-03-31,2019-09-09,phung.tietnha@mapactive.vn,Division Manager,Merchandising,Division Manager (E1),SCMDMMA0
+Active,23019421,Vo Thuy Minh Tuyen,Female,1982-06-19,2019-10-01,tuyen.vothuyminh@mapactive.vn,Merchandise Associate Manager,Merchandising,Associate Manager (D1),SCMDMMA0
+Active,23019422,Dang Thi Thanh Tam,Female,1983-03-16,2022-01-04,tam.dangthithanh@mapactive.vn,Group Brand Manager,Merchandising,Senior Manager (D3),SCMDMMA0
+Active,23019423,Pham My Tu,Female,1992-04-08,2022-03-07,tu.phammy@mapactive.vn,Merchandise Associate Manager,Merchandising,Associate Manager (D1),SCMDMMA0
+Active,23019424,Le Ngoc My Linh,Female,1989-08-11,2023-02-01,linh.lengocmy@mapactive.vn,Merchandise Associate Manager,Merchandising,Associate Manager (D1),SCMDMMA0
+Active,23019425,Nguyen Phuoc Thanh,Male,1996-09-29,2022-05-04,thanh.nguyenphuoc@mapactive.vn,Merchandiser,Merchandising,Senior Executive (C2),SCMDMMA0
+Active,23019428,Tran Ngoc Doan Trinh,Female,1995-11-26,2022-10-24,trinh.tranngocdoan@mapactive.vn,Merchandise Planning Manager,Merchandising,Manager (D2),SCMDMMA0
+Active,23019575,Dao Duc Huy,Male,1994-03-09,2023-07-03,huy.daoduc@mapactive.vn,Operation Manager,Operations,Manager (D2),SCOPMMA0
+Active,23024603,Nguyen Duyen Ngoc,Female,1991-10-12,2023-09-05,ngoc.nguyenduyen@mapactive.vn,Business Development Senior Manager,Business Development,Senior Manager (D3),SCBDMMA0
+Active,23025932,Nghiem Thi Hong Van,Female,1992-06-04,2023-10-16,van.nghiemthihong@mapactive.vn,Merchandise Associate Manager,Merchandising,Associate Manager (D1),SCMDMMA0
+Active,23025944,Le Ngoc Bich Tram,Female,1997-01-30,2023-10-20,tram.lengocbich@mapactive.vn,Marketing Supervisor,Marketing,Senior Executive (C2),SCMKMMA0
+Active,23026370,Vo Thi Hoang Anh Xuan,Female,1992-07-25,2023-10-19,xuan.vothihoanganh@mapactive.vn,Operation Executive,Operations,Senior Executive (C2),SCOPMMA0
+Active,23026764,Duong Quang Minh Tuan,Male,1987-11-21,2023-10-30,tuan.duongquangminh@mapactive.vn,Area Store Manager - South,Operations,Associate Manager (D1),SCOPMMA0
+Active,23027920,Vo Lam Minh Dat,Male,1992-08-19,2023-11-13,dat.volamminh@mapactive.vn,Area Store Manager - South,Operations,Associate Manager (D1),SCOPMMA0
+Active,23029081,Tran Vu Kim Chi,Female,1981-08-02,2024-01-02,Chi.tranvukim@mapactive.vn,Brand Manager,Merchandising,Division Manager (E1),SCMDMMA0
+Active,24010666,Nguyen Thi Hong Nhung,Female,1991-07-23,2024-06-24,nhung.nguyenthihong01@mapactive.vn,Area Store Manager - North,Operations,Associate Manager (D1),SCOPMMA0
+Active,24012956,Ta Quynh Trang,Female,1999-09-29,2024-07-18,trang.taquynh@mapactive.vn,COE Executive,"COE, Inventory Control & Internal Audit",Senior Associate (B3),SCCOMMA0
+Active,24024351,Vu Xuan Uyen,Female,2002-05-09,2025-01-01,uyen.vuxuan@mapactive.vn,Marketing Executive,Marketing,Associate (B2),SCMKMMA0
+Active,24024355,Van Duc Minh,Male,2001-01-31,2025-01-01,minh.vanduc@mapactive.vn,IT Officer,Information Technology,Associate (B2),SCITMMA0
+Active,25006527,Nguyen My Binh,Female,1992-07-08,2025-05-19,binh.nguyenmy@mapactive.vn,Digital division manager,E-Commerce,Division Manager (E1),SCECMMA0
+Active,25013875,Nguyen Thi Tuyet Nhung,Female,1995-07-08,2025-08-11,nhung.nguyenthituyet@map.co.id,Merchandise Associate Manager,Merchandising,Associate Manager (D1),SCMDMMA0
+Active,25017209,Lac Tuan Luong,Male,2000-05-02,2025-09-15,luong.lactuan@mapactive.vn,Operation Executive,Operations,Senior Executive (C2),SCOPMMA0
+Active,25018457,Nguyen Thi Qui,Female,1992-06-19,2025-10-01,qui.nguyenthi@map.co.id,Accountant,Finance Accounting,Junior Associate (B1),SCACMMA0
+Active,25018683,Doan Thien Ho An,Female,1999-08-23,2025-11-03,Doan.An@mapactive.vn,Digital Marketing Manager,E-Commerce,Manager (D2),SCECMMA0
+Active,25018937,Tran Thanh Nguyen,Male,2002-05-08,2025-10-20,Tran.Nguyen@mapactive.vn,IT Admin,Information Technology,Junior Associate (B1),SCITMMA0
+Active,25019163,Vo Ngoc Thanh Ngan,Female,2004-09-15,2025-11-12,ngan.vongocthanh@mapactive.vn,Merchandiser,Merchandising,Associate (B2),SCMDMMA0
+Active,25019984,Nguyen Bao Du,Male,2001-03-03,2025-04-01,du.nguyenbao@mapactive.vn,HR Admin Staff,Human Capital,Associate (B2),SCHRMMA0
+Active,25023059,Tran A Giang,Female,2004-02-10,2025-12-25,giang.trana@mapactive.vn,Shipping Officer,Logistics,Associate (B2),SCLOMMA0
+Active,26026763,Co Anh Tuan,Male,1994-12-20,2026-02-23,tuan.coanh@mapactive.vn,Area Store Manager - South,Operations,Associate Manager (D1),SCOPMMA0
+Active,26027749,Bui Kim Tra My,Female,2002-02-28,2026-03-01,my.bui@mapactive.vn,HR Admin Staff,Human Capital,Junior Associate (B1),SCHRMMA0
+Active,26027754,Nguyen Thi Truc Quynh,Female,2004-02-17,2026-03-16,nntq.work@gmail.com,Training Executive,Operations,Junior Associate (B1),SCOPMMA0
+Active,26029060,Pham Quoc Thai,Male,2000-09-19,2026-04-13,pham.thai@mapactive.vn,Merchandise Planning Associate Manager,Merchandising,Associate Manager (D1),SCMDMMA0
+Active,26029886,Nguyen Thi Tuong Vy,Female,2004-03-21,2026-04-15,vy.nguyen@mapactive.vn,E-commerce Junior Associate,E-Commerce,Junior Associate (B1),SCECMMA0
+Active,26029968,Do Thuy Van,Female,1990-03-13,2026-04-20,do.van@mapactive.vn,Brand Manager,Merchandising,Manager (D2),SCMDMMA0
+Active,26031112,Tran Nguyen Tram Anh,Female,1992-11-10,2026-05-11,tran.tramanh@mapactive.vn,Marketing Associate Manager,Marketing,Associate Manager (D1),SCMKMMA0
+Active,26031947,Nguyen Thi Ngoc Thuy,Female,2004-12-24,2026-05-20,Nguyen.Thuy@mapactive.vn,Receivable Accountant,Finance Accounting,Senior Associate (B3),SCACMMA0
+Active,26032000,Nguyen Tuong An Chi,Female,2003-02-23,2026-05-25,Nguyen.Chi@mapactive.vn,Business Development Executive,Business Development,Executive (C1),SCBDMMA0
+Active,26032382,Nguyen Hoang Loan,Male,1994-11-10,2026-06-01,loan.nguyenhoang@mapactive.vn,Senior Project Supervisor,Project,Associate Manager (D1),SCPJMMA0
+Active,26033070,Ton Thi Hong Lan,Female,2004-04-13,2026-06-08,lanton1304@gmail.com,Shipping Officer,Logistics,Junior Associate (B1),SCLOMMA0
+Active,26033173,Le Thi My Tran,Female,2002-10-24,2026-07-15,lethimytran4@gmail.com,Graphic Designer,Marketing,Junior Associate (B1),SCMKMMA0
