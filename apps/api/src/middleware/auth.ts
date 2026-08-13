@@ -10,9 +10,9 @@ export interface AuthPayload {
   role: string;
 }
 
-export interface AuthRequest extends Request {
+export type AuthRequest = Request & {
   user?: AuthPayload;
-}
+};
 
 export function authMiddleware(req: AuthRequest, res: Response, next: NextFunction): void {
   const authHeader = req.headers.authorization;
