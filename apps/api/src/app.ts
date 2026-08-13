@@ -1,6 +1,6 @@
 import 'dotenv/config';
-import * as expressModule from 'express';
-import * as corsModule from 'cors';
+import express, { Request, Response } from 'express';
+import cors from 'cors';
 import { PrismaClient } from '@prisma/client';
 import authRouter from './modules/auth/auth.router.js';
 import assetRouter from './modules/assets/asset.router.js';
@@ -12,9 +12,6 @@ import reportRouter from './modules/reports/report.router.js';
 import auditRouter from './modules/audit/audit.router.js';
 import { errorHandler } from './middleware/error.js';
 
-const express = (expressModule as any).default || expressModule;
-const cors = (corsModule as any).default || corsModule;
-
 export const prisma = new PrismaClient();
 
 const app = express();
@@ -25,7 +22,7 @@ const configuredOrigins = (process.env.CORS_ORIGIN || '*')
   .filter(Boolean);
 
 app.use(cors({
-  origin: (origin, callback) => {
+  origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
     if (!origin || configuredOrigins.includes('*') || configuredOrigins.includes(origin)) {
       callback(null, true);
       return;
@@ -37,7 +34,7 @@ app.use(cors({
 app.use(express.json({ limit: '10mb' }));
 
 // Health check
-app.get('/health', (_req, res) => {
+app.get('/health', (_req: Request, res: Response) => {
   res.json({ success: true, message: 'Asset Management API is running', timestamp: new Date().toISOString() });
 });
 
