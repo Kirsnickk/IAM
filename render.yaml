@@ -6,7 +6,7 @@ services:
     region: singapore
     plan: starter
     buildCommand: npm install && npm run build --workspace=packages/shared && npm run build --workspace=apps/api
-    startCommand: cd apps/api && npx tsx src/prisma/import-to-production.ts || true && node dist/server.js
+    startCommand: cd apps/api && npx prisma db push && npm run db:seed && node dist/server.js
     envVars:
       - key: NODE_ENV
         value: production
