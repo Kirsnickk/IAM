@@ -1,0 +1,128 @@
+﻿source_file,purpose,priority,rows_read
+Audit 2026 device/Data store/Check List.xlsx,store master/checklist,1,0
+Audit 2026 device/Data store/Firewall Serial Number.xlsx,store firewall/network,1,32
+Audit 2026 device/Data store/Audit/A001.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/A002.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/A003.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/V003.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA01.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA03.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA04.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA05.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA06.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA08.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA11.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA12.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA13.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA14.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA15.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA16.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA18.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA19.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA20.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA23.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VA24.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VH01.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VH02.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VH03.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VI03.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VN05.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VN07.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VN09.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VN10.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VN16.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VN19.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VN27.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VN28.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VO02.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VO04.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/Audit/VO05.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/!!!/VN06.xlsx,store asset audit,1,0
+Audit 2026 device/Data store/!!!/VN12.xlsx,store asset audit,1,0
+Asset management/Store/Details/A001.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/A002.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/A003.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/V003.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA01.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA03.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA04.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA05.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA06.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA08.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA11.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA12.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA13.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA14.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA15.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA16.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA18.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA19.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA20.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA23.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VA24.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VH01.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VH02.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VH03.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VI03.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VN05.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VN07.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VN09.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VN10.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VN16.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VN19.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VN27.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VN28.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VO02.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VO04.xlsx,store asset detail fallback,2,0
+Asset management/Store/Details/VO05.xlsx,store asset detail fallback,2,0
+Asset management/Store/Dashboard.xlsx,store consolidated dashboard,3,632
+Asset management/Office/Employees.xlsx,employee master,1,69
+Asset management/Office/Office assets.xlsx,office asset snapshot,1,103
+Audit 2026 device/Office assets.xlsx,office asset snapshot,2,110
+Audit 2026 device/Data store/Audit/A001.xlsx,selected store inventory,1,15
+Audit 2026 device/Data store/Audit/A002.xlsx,selected store inventory,1,14
+Audit 2026 device/Data store/Audit/A003.xlsx,selected store inventory,1,15
+Audit 2026 device/Data store/Audit/V003.xlsx,selected store inventory,1,22
+Audit 2026 device/Data store/Audit/VA01.xlsx,selected store inventory,1,29
+Audit 2026 device/Data store/Audit/VA03.xlsx,selected store inventory,1,14
+Audit 2026 device/Data store/Audit/VA04.xlsx,selected store inventory,1,9
+Audit 2026 device/Data store/Audit/VA05.xlsx,selected store inventory,1,16
+Audit 2026 device/Data store/Audit/VA06.xlsx,selected store inventory,1,13
+Audit 2026 device/Data store/Audit/VA08.xlsx,selected store inventory,1,10
+Audit 2026 device/Data store/Audit/VA11.xlsx,selected store inventory,1,14
+Audit 2026 device/Data store/Audit/VA12.xlsx,selected store inventory,1,19
+Audit 2026 device/Data store/Audit/VA13.xlsx,selected store inventory,1,16
+Audit 2026 device/Data store/Audit/VA14.xlsx,selected store inventory,1,17
+Audit 2026 device/Data store/Audit/VA15.xlsx,selected store inventory,1,13
+Audit 2026 device/Data store/Audit/VA16.xlsx,selected store inventory,1,30
+Audit 2026 device/Data store/Audit/VA18.xlsx,selected store inventory,1,14
+Audit 2026 device/Data store/Audit/VA19.xlsx,selected store inventory,1,17
+Audit 2026 device/Data store/Audit/VA20.xlsx,selected store inventory,1,23
+Audit 2026 device/Data store/Audit/VA23.xlsx,selected store inventory,1,7
+Audit 2026 device/Data store/Audit/VA24.xlsx,selected store inventory,1,19
+Audit 2026 device/Data store/Audit/VH01.xlsx,selected store inventory,1,15
+Audit 2026 device/Data store/Audit/VH02.xlsx,selected store inventory,1,7
+Audit 2026 device/Data store/Audit/VH03.xlsx,selected store inventory,1,22
+Audit 2026 device/Data store/Audit/VI03.xlsx,selected store inventory,1,10
+Audit 2026 device/Data store/Audit/VN05.xlsx,selected store inventory,1,16
+Audit 2026 device/Data store/!!!/VN06.xlsx,selected store inventory,1,9
+Audit 2026 device/Data store/Audit/VN07.xlsx,selected store inventory,1,12
+Audit 2026 device/Data store/Audit/VN09.xlsx,selected store inventory,1,14
+Audit 2026 device/Data store/Audit/VN10.xlsx,selected store inventory,1,12
+Audit 2026 device/Data store/!!!/VN12.xlsx,selected store inventory,1,10
+Audit 2026 device/Data store/Audit/VN16.xlsx,selected store inventory,1,16
+Audit 2026 device/Data store/Audit/VN19.xlsx,selected store inventory,1,8
+Audit 2026 device/Data store/Audit/VN27.xlsx,selected store inventory,1,26
+Audit 2026 device/Data store/Audit/VN28.xlsx,selected store inventory,1,17
+Audit 2026 device/Data store/Audit/VO02.xlsx,selected store inventory,1,57
+Audit 2026 device/Data store/Audit/VO04.xlsx,selected store inventory,1,33
+Audit 2026 device/Data store/Audit/VO05.xlsx,selected store inventory,1,0
+Asset management/Warehouse/Asset_List_DSV.xlsx,DSV warehouse physical inventory,1,19
+Asset management/Warehouse/Geodis device.xlsx,Geodis warehouse devices,1,24
+Asset management/Transititons/IT tool.xlsx,IT stock balance,1,166
+Asset management/Transititons/IT tool.xlsx,IT stock transactions,1,1140
+Asset management/Transititons/IT tool.xlsx,mini PC status,1,9
+Data clear/05_Broken_and_Transfers_Cleaned.xlsx,broken/transfer source,1,15
+Data clear/05_Broken_and_Transfers_Cleaned.xlsx,broken/transfer source,1,10
+Asset management/Store/Broken.xlsx,store broken asset,1,1
+Audit 2026 device/Data store/New Store 2026/Operation device for plan new store.xlsx,"planned new-store shipment, not current inventory",2,0

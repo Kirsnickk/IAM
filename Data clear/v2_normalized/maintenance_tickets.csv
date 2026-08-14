@@ -1,0 +1,17 @@
+﻿ticket_key,ticket_no,asset_key,title,description,priority,status,reported_by_employee_id,source_ref,needs_review
+TKT-E305931D4D,DATA-BRK-E305931D,AID:22VN00000029,Hư hỏng: Laptop Dell Latitude 3520,Hư bản lề,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=2,true
+TKT-E075C69018,DATA-BRK-E075C690,SN:4R4JGL3,Hư hỏng: Laptop Dell Latitude 3520,"Laptop trước là của Phan Bảo Hoàng làm rớt bể không xài được nữa, không có nguồn, mất 1 ram. Anh Đạt nói lúc đó chưa có quy trình bảo hành hay đền gì hết chỉ cấp máy mới cho Hoang nên cần phải check lại với team HR. Lời khai by Pak Quân",HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=3,true
+TKT-70FC137C53,DATA-BRK-70FC137C,AID:22VN00110026,Hư hỏng: Laptop Dell Latitude 3520,Hư phím,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=4,true
+TKT-48CCC1387C,DATA-BRK-48CCC138,AID:22VN00000008,Hư hỏng: Laptop Dell Latitude 3520,"Hư phím, ko có ram",HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=5,true
+TKT-3640AD246B,DATA-BRK-3640AD24,AID:22VN00110011,Hư hỏng: Laptop Dell Inspiron 3505,Broken asset reported in source,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=6,true
+TKT-AFC4A908CE,DATA-BRK-AFC4A908,AID:22VN00110024,Hư hỏng: Laptop Dell Inspiron 3505,.,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=7,true
+TKT-79B5D98E0E,DATA-BRK-79B5D98E,AID:22VN00000057,Hư hỏng: Laptop Dell Latitude 3520,Hư phím,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=8,true
+TKT-9F599F2D3F,DATA-BRK-9F599F2D,AID:22VN00000056,Hư hỏng: Laptop Dell Latitude 3520,Hư phím,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=9,true
+TKT-55EA9F79D2,DATA-BRK-55EA9F79,AID:22VN00000024,Hư hỏng: Laptop Dell Latitude 3520,Sọc màn hình,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=10,true
+TKT-18A258E05B,DATA-BRK-18A258E0,AID:22VN00000054,Hư hỏng: Laptop Dell Latitude 3520,Hư bản lề,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=11,true
+TKT-60AEB765DC,DATA-BRK-60AEB765,SN:5CG7325LVQ,Hư hỏng: HP Elitebook 840 G4,Thanh lý,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=12,true
+TKT-1D1A8D4326,DATA-BRK-1D1A8D43,SN:PC-OVT5R6,Hư hỏng: Lenovo ThinkPad,Thanh lý,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=13,true
+TKT-888AE80125,DATA-BRK-888AE801,SN:FXVJB62,Hư hỏng: Dell Vostro 14-5480,Thanh lý,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=14,true
+TKT-0AD45CBB8B,DATA-BRK-0AD45CBB,SN:CND218PWRZ,Hư hỏng: HP Paviloin,Thanh lý,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=15,true
+TKT-E1E8E31293,DATA-BRK-E1E8E312,OBS:5EAEF14361,Hư hỏng: HP ProBook G2,Thanh lý,HIGH,OPEN,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Office_Broken!row=16,true
+TKT-3BFBD8A9C0,DATA-BRK-3BFBD8A9,SN:354348130452407,Hư hỏng: Samsung S6 Lite,"bị rò rỉ nước ở mall làm hư màn hình , mall đã sửa 1 lần nhưng sau 6 tháng thì hư tiền sửa 5 chẹo = 50% máy mắc quá nên 0 sửa , nó ở trong kho",HIGH,OPEN,,Asset management/Store/Broken.xlsx#Sheet1!row=1,true

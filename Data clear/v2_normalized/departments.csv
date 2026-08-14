@@ -1,0 +1,15 @@
+﻿department_code,name,cost_center_code,organization_code,source_refs
+SCMDMMA0,Merchandising,SCMDMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=2
+SCACMMA0,Finance Accounting,SCACMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=3
+SCWSMMA0,Wholesales,SCWSMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=8
+SCHRMMA0,Human Capital,SCHRMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=11
+SCLEMMA0,Legal,SCLEMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=12
+SCITMMA0,Information Technology,SCITMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=15
+SCCOMMA0,"COE, Inventory Control & Internal Audit",SCCOMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=16
+SCLOMMA0,Logistics,SCLOMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=20
+SCMKMMA0,Marketing,SCMKMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=24
+SCVMMMA0,Visual Merchandising,SCVMMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=26
+SCOPMMA0,Operations,SCOPMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=28
+SCPJMMA0,Project,SCPJMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=29
+SCBDMMA0,Business Development,SCBDMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=39
+SCECMMA0,E-Commerce,SCECMMA0,MAP-VN,Asset management/Office/Employees.xlsx#Sheet1!row=50

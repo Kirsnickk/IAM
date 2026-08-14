@@ -1,0 +1,11 @@
+﻿transfer_key,asset_key,from_location_code,to_location_code,from_department_code,to_department_code,reason,status,requested_by_employee_id,source_ref,needs_review
+TRF-366EA33660,AID:22VN00000017,HCM,MAP_FASHION,,,Source list says transfer to Map Fashion; date/approval not provided,PENDING,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Transfer_Map_Fashion!row=2,true
+TRF-D436FDCEC7,AID:22VN00000010,HCM,MAP_FASHION,,,Source list says transfer to Map Fashion; date/approval not provided,PENDING,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Transfer_Map_Fashion!row=3,true
+TRF-0A6965A2C5,AID:22VN00000019,HCM,MAP_FASHION,,,Source list says transfer to Map Fashion; date/approval not provided,PENDING,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Transfer_Map_Fashion!row=4,true
+TRF-0715B74D62,AID:22VN00000005,HCM,MAP_FASHION,,,Source list says transfer to Map Fashion; date/approval not provided,PENDING,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Transfer_Map_Fashion!row=5,true
+TRF-3B1584DADA,SN:TCEY002724,HCM,MAP_FASHION,,,Source list says transfer to Map Fashion; date/approval not provided,PENDING,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Transfer_Map_Fashion!row=6,true
+TRF-15A1E014B5,SN:TCEY004688,HCM,MAP_FASHION,,,Source list says transfer to Map Fashion; date/approval not provided,PENDING,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Transfer_Map_Fashion!row=7,true
+TRF-E06E6EE721,SN:TCCY014794,HCM,MAP_FASHION,,,Source list says transfer to Map Fashion; date/approval not provided,PENDING,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Transfer_Map_Fashion!row=8,true
+TRF-56E96A0B3D,SN:G17NE9935,HCM,MAP_FASHION,,,Source list says transfer to Map Fashion; date/approval not provided,PENDING,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Transfer_Map_Fashion!row=9,true
+TRF-D1D31D287D,SN:G21M82827,HCM,MAP_FASHION,,,Source list says transfer to Map Fashion; date/approval not provided,PENDING,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Transfer_Map_Fashion!row=10,true
+TRF-58EDF67F82,SN:G21NE8123,HCM,MAP_FASHION,,,Source list says transfer to Map Fashion; date/approval not provided,PENDING,,Data clear/05_Broken_and_Transfers_Cleaned.xlsx#Transfer_Map_Fashion!row=11,true
