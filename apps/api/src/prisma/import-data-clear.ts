@@ -8,12 +8,18 @@ const xlsx = (xlsxModule as any).default || xlsxModule;
 const bcrypt = (bcryptModule as any).default || bcryptModule;
 const prisma = new PrismaClient();
 
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 // Resolve Data clear folder for monorepo local dev and Render (rootDir=apps/api)
 function resolveDataClearDir(): string {
   const candidates = [
     process.env.DATA_CLEAR_DIR,
+    path.resolve(process.cwd(), 'Data clear'),
+    path.resolve(process.cwd(), '../Data clear'),
     path.resolve(process.cwd(), '../../Data clear'),
-    path.resolve(process.cwd(), '../../../Data clear'),
     path.resolve(__dirname, '../../../../Data clear'),
     path.resolve('C:/Users/vandu/Documents/Asset_management/Data clear'),
   ].filter(Boolean) as string[];
@@ -422,7 +428,7 @@ async function main() {
   console.log('======================================================\n');
 }
 
-if (process.argv[2] === '--run') {
+if (process.argv.includes('--run') || process.env.AUTO_IMPORT === 'true' || process.argv[1]?.includes('import-data-clear')) {
   main()
     .catch((e) => {
       console.error('❌ Data Import Failed:', e);
