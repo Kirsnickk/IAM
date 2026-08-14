@@ -12,7 +12,8 @@
     "db:migrate": "prisma migrate dev",
     "db:push": "prisma db push",
     "db:seed": "npx tsx src/prisma/seed.ts",
-    "db:import-data": "npx tsx src/prisma/import-data-clear.ts --run"
+    "db:import-data": "npx tsx src/prisma/import-data-clear.ts --run",
+    "db:import-v2": "npx tsx src/prisma/import-data-v2.ts"
   },
   "dependencies": {
     "@asset-mgmt/shared": "*",
