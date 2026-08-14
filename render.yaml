@@ -6,7 +6,8 @@ services:
     region: singapore
     plan: starter
     buildCommand: npm install && npm run build --workspace=packages/shared && npm run build --workspace=apps/api
-    startCommand: cd apps/api && npx prisma db push && npx tsx src/prisma/import-data-clear.ts && node dist/server.js
+    # Schema changes must be applied through reviewed Prisma migrations, not on every startup.
+    startCommand: cd apps/api && node dist/server.js
     envVars:
       - key: NODE_ENV
         value: production
@@ -17,7 +18,7 @@ services:
       - key: JWT_EXPIRES_IN
         value: 7d
       - key: CORS_ORIGIN
-        value: https://asset-management-web.vercel.app
+        value: https://iam-api-sandy.vercel.app
       - key: DATABASE_URL
         fromDatabase:
           name: asset-management-db

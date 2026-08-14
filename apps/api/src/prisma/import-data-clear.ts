@@ -8,10 +8,28 @@ const xlsx = (xlsxModule as any).default || xlsxModule;
 const bcrypt = (bcryptModule as any).default || bcryptModule;
 const prisma = new PrismaClient();
 
-// Absolute path to Data clear folder
-const dataClearDir = fs.existsSync(path.resolve(process.cwd(), '../../Data clear'))
-  ? path.resolve(process.cwd(), '../../Data clear')
-  : path.resolve('C:/Users/vandu/Documents/Asset_management/Data clear');
+// Resolve Data clear folder for monorepo local dev and Render (rootDir=apps/api)
+function resolveDataClearDir(): string {
+  const candidates = [
+    process.env.DATA_CLEAR_DIR,
+    path.resolve(process.cwd(), '../../Data clear'),
+    path.resolve(process.cwd(), '../../../Data clear'),
+    path.resolve(__dirname, '../../../../Data clear'),
+    path.resolve('C:/Users/vandu/Documents/Asset_management/Data clear'),
+  ].filter(Boolean) as string[];
+
+  for (const candidate of candidates) {
+    if (fs.existsSync(candidate)) {
+      return candidate;
+    }
+  }
+
+  throw new Error(
+    `Data clear folder not found. Checked: ${candidates.join(', ')}`
+  );
+}
+
+const dataClearDir = resolveDataClearDir();
 
 function readCsv(filePath: string): any[] {
   if (!fs.existsSync(filePath)) {
