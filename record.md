@@ -7,7 +7,7 @@ Tiếp tục phát triển hệ thống quản lý tài sản doanh nghiệp tro
 - Local: `C:\Users\vandu\Documents\Asset_management`
 - GitHub: `https://github.com/Kirsnickk/IAM`
 - Branch chính: `main`
-- Commit gần nhất đã deploy: `934cebb`
+- Commit gần nhất đã deploy: `13c6be9`
 
 ## Kiến trúc hiện tại
 - Monorepo npm workspaces
