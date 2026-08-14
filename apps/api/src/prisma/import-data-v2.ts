@@ -52,8 +52,10 @@ async function dryRun() {
 async function applyImport() {
   const issues = csv('data_quality_issues.csv');
   const errors = issues.filter((row) => row.severity === 'ERROR');
-  if (errors.length || (issues.length && !allowReview)) {
-    throw new Error(`Import blocked: ${errors.length} ERROR and ${issues.length} total quality issues. Review data_quality_issues.csv or pass --allow-review explicitly.`);
+  const blockingTypes = new Set(['DUPLICATE_SERIAL_CROSS_LOCATION', 'ASSET_KEY_CONFLICT', 'UNKNOWN_EMPLOYEE_REFERENCE', 'MISSING_STORE_MASTER']);
+  const unresolvedIdentityIssues = issues.filter((row) => blockingTypes.has(row.issue_type));
+  if (errors.length || (unresolvedIdentityIssues.length && !allowReview)) {
+    throw new Error(`Import blocked: ${errors.length} ERROR and ${unresolvedIdentityIssues.length} blocking identity/location issues. Review data_quality_issues.csv or pass --allow-review explicitly.`);
   }
   const databaseUrl = process.env.DATABASE_URL || '';
   const productionLike = /neon|render|morning-frog/i.test(databaseUrl);
@@ -108,7 +110,12 @@ async function applyImport() {
     const assetId = assetIds.get(row.asset_key);
     const employeeId = employeeIds.get(row.employee_id);
     if (!assetId || !employeeId) continue;
-    await prisma.assetAssignment.create({ data: { assetId, employeeId, assignedById: admin.id, assignedDate: dateOrNull(row.assigned_date), actualReturnDate: dateOrNull(row.actual_return_date), status: enumValue(row.status, ['ACTIVE', 'RETURNED', 'TRANSFERRED'] as const, 'ACTIVE') as AssignmentStatus, notes: row.notes } });
+    const existing = await prisma.assetAssignment.findFirst({ where: { assetId, employeeId, status: enumValue(row.status, ['ACTIVE', 'RETURNED', 'TRANSFERRED'] as const, 'ACTIVE') as AssignmentStatus } });
+    if (!existing) {
+      await prisma.assetAssignment.create({ data: { assetId, employeeId, assignedById: admin.id, assignedDate: dateOrNull(row.assigned_date), actualReturnDate: dateOrNull(row.actual_return_date), status: enumValue(row.status, ['ACTIVE', 'RETURNED', 'TRANSFERRED'] as const, 'ACTIVE') as AssignmentStatus, notes: row.notes } });
+    } else {
+      await prisma.assetAssignment.update({ where: { id: existing.id }, data: { notes: row.notes, actualReturnDate: dateOrNull(row.actual_return_date) } });
+    }
   }
   for (const row of csv('maintenance_tickets.csv')) {
     const assetId = assetIds.get(row.asset_key);
