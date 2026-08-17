@@ -21,32 +21,32 @@ export function Header() {
   };
 
   return (
-    <header className="h-16 bg-white border-b border-slate-200 px-8 flex items-center justify-between shadow-sm">
+    <header className="h-14 bg-white/80 backdrop-blur-xl border-b border-zinc-200/80 px-8 flex items-center justify-between sticky top-0 z-10">
       <div className="flex items-center space-x-4">
-        <span className="text-slate-500 text-sm font-medium">Hệ thống Quản lý Tài sản Doanh nghiệp</span>
+        <span className="text-[11px] uppercase tracking-[0.08em] font-bold text-zinc-400">IT Asset Management</span>
       </div>
 
-      <div className="flex items-center space-x-6">
-        <button className="relative text-slate-400 hover:text-slate-600 transition">
-          <Bell className="w-5 h-5" />
-          <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
+      <div className="flex items-center space-x-4">
+        <button className="relative p-2 text-zinc-400 hover:text-zinc-700 hover:bg-zinc-100 rounded-xl transition-all duration-200">
+          <Bell className="w-[18px] h-[18px]" />
+          <span className="absolute top-1 right-1 bg-rose-500 text-white text-[9px] w-[14px] h-[14px] rounded-full flex items-center justify-center font-bold ring-2 ring-white">3</span>
         </button>
 
         {user && (
-          <div className="flex items-center space-x-3 border-l border-slate-200 pl-6">
-            <div className="w-9 h-9 bg-sky-100 text-sky-700 rounded-full flex items-center justify-center font-bold text-sm border border-sky-200">
-              {user.fullName ? user.fullName.charAt(0) : 'U'}
+          <div className="flex items-center space-x-3 border-l border-zinc-200 pl-4">
+            <div className="w-8 h-8 bg-gradient-to-br from-brand-500 to-brand-600 text-white rounded-full flex items-center justify-center font-bold text-xs ring-1 ring-brand-500/20">
+              {user.fullName ? user.fullName.charAt(0).toUpperCase() : 'U'}
             </div>
             <div className="text-left">
-              <p className="text-sm font-semibold text-slate-800 leading-tight">{user.fullName || 'Người dùng'}</p>
-              <p className="text-xs text-sky-600 font-medium">{user.role}</p>
+              <p className="text-[13px] font-semibold text-zinc-900 leading-tight tracking-tight">{user.fullName || 'Người dùng'}</p>
+              <p className="text-[10px] uppercase tracking-[0.05em] text-brand-600 font-bold">{user.role}</p>
             </div>
             <button
               onClick={handleLogout}
-              className="ml-4 p-2 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition"
+              className="ml-2 p-2 text-zinc-400 hover:text-rose-600 hover:bg-rose-50 rounded-xl transition-all duration-200"
               title="Đăng xuất"
             >
-              <LogOut className="w-4 h-4" />
+              <LogOut className="w-[16px] h-[16px]" />
             </button>
           </div>
         )}

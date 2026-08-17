@@ -12,21 +12,16 @@
     "db:migrate": "prisma migrate dev",
     "db:push": "prisma db push",
     "db:seed": "npx tsx src/prisma/seed.ts",
-    "db:import-data": "npx tsx src/prisma/import-data-clear.ts --run",
-    "db:import-v2": "npx tsx src/prisma/import-data-v2.ts"
+    "db:import": "npx tsx src/prisma/import-data-v2.ts"
   },
   "dependencies": {
-    "@asset-mgmt/shared": "*",
     "@prisma/client": "^5.14.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "csv-parser": "^3.2.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
-    "qrcode": "^1.5.3",
-    "xlsx": "^0.18.5",
-    "zod": "^3.23.8"
+    "qrcode": "^1.5.3"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",

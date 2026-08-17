@@ -18,14 +18,14 @@ export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 bg-slate-900 text-slate-300 min-h-screen flex flex-col border-r border-slate-800">
-      <div className="p-6 border-b border-slate-800 flex items-center space-x-3">
-        <div className="bg-sky-600 text-white p-2 rounded-lg">
-          <Building2 className="w-6 h-6" />
+    <aside className="w-64 bg-zinc-950 text-zinc-300 min-h-screen flex flex-col border-r border-zinc-900">
+      <div className="p-6 border-b border-zinc-900 flex items-center space-x-3">
+        <div className="bg-brand-600 text-white p-2 rounded-xl ring-1 ring-brand-500/20 shadow-sm">
+          <Building2 className="w-5 h-5" />
         </div>
         <div>
-          <h1 className="font-bold text-white text-lg leading-tight">AssetMaster</h1>
-          <p className="text-xs text-slate-400">Quản lý Tài sản Doanh nghiệp</p>
+          <h1 className="font-bold text-white text-[15px] tracking-tight">AssetMaster</h1>
+          <p className="text-[10px] uppercase tracking-wider text-zinc-500 font-semibold">Enterprise IAM</p>
         </div>
       </div>
 
@@ -37,19 +37,21 @@ export function Sidebar() {
             <Link
               key={item.href}
               href={item.href}
-              className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                isActive ? 'bg-sky-600 text-white' : 'hover:bg-slate-800 text-slate-400 hover:text-slate-200'
+              className={`flex items-center space-x-3 px-4 py-3 rounded-xl text-xs font-semibold uppercase tracking-[0.05em] transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                isActive 
+                  ? 'bg-brand-600 text-white shadow-sm shadow-brand-500/10' 
+                  : 'text-zinc-500 hover:bg-zinc-900 hover:text-zinc-200'
               }`}
             >
-              <Icon className="w-5 h-5" />
+              <Icon className="w-4 h-4 shrink-0" />
               <span>{item.label}</span>
             </Link>
           );
         })}
       </nav>
 
-      <div className="p-4 border-t border-slate-800 text-xs text-slate-500 text-center">
-        v1.0.0 — Ready for Hosting
+      <div className="p-4 border-t border-zinc-900 text-[10px] uppercase tracking-wider text-zinc-600 text-center font-bold">
+        Production Ready
       </div>
     </aside>
   );

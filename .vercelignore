@@ -1,0 +1,21 @@
+node_modules
+**/node_modules
+.next
+**/.next
+dist
+**/dist
+.cache
+**/.cache
+.env*
+.git
+Data
+Data clear
+*.xlsx
+*.xls
+*.pdf
+*.jpg
+*.png
+*.log
+REDESIGN_SUMMARY.md
+omnirouter_model_check
+C:/Users/vandu/Documents/Asset_management/.vercelignore
