@@ -7,7 +7,14 @@ function getToken() {
 
 async function request(path: string, options: RequestInit = {}) {
   const token = getToken();
-  const headers: HeadersInit = { 'Content-Type': 'application/json', ...options.headers };
+  const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+  
+  if (options.headers) {
+    Object.entries(options.headers).forEach(([key, value]) => {
+      if (typeof value === 'string') headers[key] = value;
+    });
+  }
+  
   if (token) headers.Authorization = `Bearer ${token}`;
 
   const res = await fetch(`${API_BASE}${path}`, { ...options, headers });

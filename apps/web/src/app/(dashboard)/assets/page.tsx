@@ -156,12 +156,12 @@ export default function AssetsPage() {
     try {
       const response = await api.get('/assets', {
         params: {
-          page,
-          limit: PAGE_SIZE,
-          search: appliedSearch || undefined,
-          status: statusFilter || undefined,
-          categoryId: categoryFilter || undefined,
-          locationId: locationFilter || undefined,
+          page: page.toString(),
+          limit: PAGE_SIZE.toString(),
+          ...(appliedSearch && { search: appliedSearch }),
+          ...(statusFilter && { status: statusFilter }),
+          ...(categoryFilter && { categoryId: categoryFilter }),
+          ...(locationFilter && { locationId: locationFilter }),
         },
       });
       setAssets(response.data.assets || []);

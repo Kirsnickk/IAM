@@ -9,32 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          500: '#0284c7',
-          600: '#0284c7',
-          700: '#0369a1',
-          900: '#0c4a6e',
+        // Vercel/Linear-style Dark Palette
+        vercel: {
+          bg: '#08090a',
+          panel: '#0f1011',
+          surface: '#191a1b',
+          text: '#f7f8f8',
+          secondary: '#d0d6e0',
+          tertiary: '#8a8f98',
+          accent: '#5e6ad2',
+          border: 'rgba(255, 255, 255, 0.08)',
         },
-        // Refined neutral palette (Zinc)
-        zinc: {
-          50: '#fafafa',
-          100: '#f4f4f5',
-          200: '#e4e4e7',
-          300: '#d4d4d8',
-          400: '#a1a1aa',
-          500: '#71717a',
-          600: '#52525b',
-          700: '#3f3f46',
-          800: '#27272a',
-          900: '#18181b',
-          950: '#09090b',
-        }
       },
       fontFamily: {
-        sans: ['"Geist Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        mono: ['"Geist Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+        sans: ['"Inter"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },
     },
   },

@@ -4,25 +4,25 @@
 
 @layer base {
   body {
-    @apply bg-zinc-50 text-zinc-900 antialiased font-sans selection:bg-brand-500/10 selection:text-brand-700;
+    @apply bg-[#08090a] text-[#f7f8f8] antialiased font-sans selection:bg-[#5e6ad2]/20 selection:text-[#f7f8f8];
   }
 }
 
 @layer components {
-  /* Doppelrand (Double-Bezel) Card Pattern */
+  /* Vercel card pattern - clean border & elevation */
   .premium-card-outer {
-    @apply bg-zinc-900/5 ring-1 ring-zinc-950/5 p-1.5 rounded-[2rem] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)];
+    @apply bg-white/5 border border-white/10 p-1 rounded-xl transition-all duration-300;
   }
 
   .premium-card-inner {
-    @apply bg-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)] rounded-[calc(2rem-0.375rem)] h-full p-6;
+    @apply bg-[#0f1011] rounded-[calc(0.75rem-0.25rem)] h-full p-6 border border-white/5;
   }
 
   .form-label {
-    @apply mb-1.5 block text-[11px] font-semibold uppercase tracking-[0.05em] text-zinc-500;
+    @apply mb-1.5 block text-[11px] font-semibold uppercase tracking-[0.05em] text-[#8a8f98];
   }
 
   .form-input {
-    @apply w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-sm text-zinc-800 outline-none transition duration-200 placeholder:text-zinc-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10;
+    @apply w-full rounded-lg border border-white/10 bg-[#0f1011] px-4 py-3 text-sm text-[#f7f8f8] outline-none transition duration-200 placeholder:text-[#62666d] focus:border-[#5e6ad2] focus:ring-1 focus:ring-[#5e6ad2]/20;
   }
 }
